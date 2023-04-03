@@ -10,7 +10,7 @@ const PriceCard = () => {
     },[])
     // console.log(cards)
     return (
-        <div className='grid grid-cols-3 gap-5 mt-5 ml-11 '>
+        <div className='grid md:grid-cols-3 gap-5 mt-5 ml-11 '>
             {
                 cards.map(card=><Product key={card.id} card={card}></Product>)
             }
