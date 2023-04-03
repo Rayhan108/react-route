@@ -3,6 +3,7 @@ import './App.css'
 import { useEffect } from 'react'
 import Link from './components/Link/Link'
 import { Bars3Icon ,XMarkIcon} from '@heroicons/react/24/solid'
+import PriceCard from './components/Card/PriceCard'
 
 function App() {
 const [routes,setRoutes]=useState([])
@@ -24,7 +25,7 @@ useEffect(()=>{
       }
     </div>
     </nav>
-  
+  <PriceCard></PriceCard>
     </>
 
 
