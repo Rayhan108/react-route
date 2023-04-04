@@ -4,10 +4,12 @@ import { useEffect } from 'react'
 import Link from './components/Link/Link'
 import { Bars3Icon ,XMarkIcon} from '@heroicons/react/24/solid'
 import PriceCard from './components/Card/PriceCard'
+import Dashboard from './components/Dashboard/Dashboard'
+import Phone from './components/Phone/Phone'
 
 function App() {
 const [routes,setRoutes]=useState([])
-const [open,setOpen] =useState([false])
+const [open,setOpen] =useState(false)
 useEffect(()=>{
   fetch('nav.json').then(res => res.json()).then(data=>setRoutes(data))
 },[])
@@ -26,6 +28,8 @@ useEffect(()=>{
     </div>
     </nav>
   <PriceCard></PriceCard>
+  <Dashboard></Dashboard>
+  <Phone></Phone>
     </>
 
 
